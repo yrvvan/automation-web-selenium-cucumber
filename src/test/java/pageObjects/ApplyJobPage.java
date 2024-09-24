@@ -75,7 +75,8 @@ public class ApplyJobPage {
     }
 
     public void uploadCV() {
-        driver.findElement(fileInput).sendKeys("/home/runner/work/automation-web-selenium-cucumber/src/file/jne.pdf");
+        String filePath = System.getProperty("user.dir") + "/src/file/jne.pdf";
+        driver.findElement(fileInput).sendKeys(filePath);
         driver.findElement(btnNextUploadCV).click();
     }
 
