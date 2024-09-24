@@ -4,6 +4,8 @@ import io.cucumber.java.en.*;
 import pageObjects.ApplyJobPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ApplyJobSteps {
@@ -14,7 +16,9 @@ public class ApplyJobSteps {
     @Given("User is on the Main page")
     public void user_is_on_the_main_page() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         driver.get("https://theforest.ai/careers/qa-engineer");
         driver.manage().window().maximize();
         applyJobPage = new ApplyJobPage(driver);
