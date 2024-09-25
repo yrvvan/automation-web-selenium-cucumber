@@ -39,6 +39,7 @@ To run this project, ensure you have the following installed on your system:
 ## Running Tests
 ### Run All Tests
 ![gifTestResult](https://github.com/user-attachments/assets/76876cb5-80c2-4de4-821f-1702e9285ee2)
+
 To run all tests, use the following command:
 ```
 mvn clean test
@@ -128,6 +129,7 @@ automation-web-selenium-cucumber/
 
 ## Test Reports
 <img width="665" alt="Screen Shot 2024-09-25 at 09 11 52" src="https://github.com/user-attachments/assets/7327f65c-339d-4560-9906-642c281739f5">
+
 After running the tests, the results will be generated in the `target/cucumber-reports.html` folder. You can customize the reports in the `pom.xml` by configuring the reporting plugin of your choice (e.g., Surefire or Cucumber Reports).
 
 ## Contributing
