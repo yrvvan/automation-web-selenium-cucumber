@@ -17,22 +17,24 @@ To run this project, ensure you have the following installed on your system:
 
 ## Setup
 - Clone the repository:
-```
-git clone https://github.com/your-repo/automation-web-selenium-cucumber.git
-cd automation-web-selenium-cucumber
-```
+  ```
+  git clone https://github.com/your-repo/automation-web-selenium-cucumber.git
+  cd automation-web-selenium-cucumber
+  ```
 
 - Install dependencies:
-The project uses Maven for dependency management. Run the following command to install dependencies:
+  The project uses Maven for dependency management. Run the following command to install dependencies:
+  ```
+  mvn clean install
+  ```
 
 - Set up WebDriver:
-Ensure that the appropriate WebDriver (ChromeDriver/GeckoDriver) is installed and accessible in your system's PATH.
-
-Alternatively, you can configure the driver in the src/test/resources/config.properties file:
-```
-browser=chrome
-driverPath=/path/to/chromedriver
-```
+  Ensure that the appropriate WebDriver (ChromeDriver/GeckoDriver) is installed and accessible in your system's PATH.
+  Alternatively, you can configure the driver in the `src/test/resources/config.properties` file:
+  ```
+  browser=chrome
+  driverPath=/path/to/chromedriver
+  ```
 
 ## Running Tests
 ### Run All Tests
